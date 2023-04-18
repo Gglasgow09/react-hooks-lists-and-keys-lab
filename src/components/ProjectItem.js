@@ -10,9 +10,7 @@ function ProjectItem({ name, about, technologies }) {
         {
           technologies.map(tech => {
             return (
-              <span>
-                {tech}
-              </span>
+              <span key={tech}>{tech}</span>
             )
           })
         }
